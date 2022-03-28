@@ -1,0 +1,57 @@
+// === Main ===
+.info {
+    text-align: center;
+    background-color: $grey_bg;
+    padding: 60px 0;
+    &__wrapper {
+        width: 870px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-family: 'Vollkorn';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0;
+        margin: 0;
+    }
+    &__btn {
+        color: $semi-black;
+        font-size: 16px;
+        line-height: 20px;
+        width: 160px;
+        border-color: $semi-black;
+        margin-top: 40px;
+        &:hover {
+            color: $white;
+            background-color: $semi-black;
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 991px) {
+    .info {
+        &__wrapper {
+            width: 728px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .info {
+        &__wrapper {
+            width: 536px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .info {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+// === / Media ===

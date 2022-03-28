@@ -1,0 +1,51 @@
+// === Base ===
+@import "base/variables";
+@import "base/mixins";
+// === / Base ===
+
+// === Libs ===
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+// === / Libs ===
+
+// === Components ===
+@import "components/logo";
+@import "components/button";
+@import "components/title";
+@import "components/subtitle";
+@import "components/navbar";
+@import "components/hr";
+// === / Components ===
+
+// === Sections ===
+@import "sections/header";
+@import "sections/info";
+@import "sections/how";
+@import "sections/projects";
+@import "sections/team";
+@import "sections/quotes";
+@import "sections/touch";
+@import "sections/footer";
+// === / Sections ===
+
+// === Common ===
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: $semi-black;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.section-outer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+// === / Common ===

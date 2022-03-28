@@ -1,0 +1,23 @@
+.projects {
+    background-color: $grey_bg;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template: repeat(3 , minmax(384px , auto)) / repeat(auto-fit , 300px);
+        grid-auto-rows: 384px;
+        gap: 20px;
+        align-items: start;
+    }
+    &__item {
+        background-color: $white;
+        &-title {
+            margin-top: 20px;
+        }
+        &-subtitle {
+            margin-top: 4px;
+            padding: 0 15px 15px;
+        }
+    }
+}

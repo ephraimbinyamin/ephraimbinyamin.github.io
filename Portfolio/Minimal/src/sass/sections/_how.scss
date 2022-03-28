@@ -1,0 +1,55 @@
+// === Main ===
+.how {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    hr {
+        height: 2px;
+    }
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template: minmax(364px , auto) / repeat(3 , 300px);
+        gap: 50px 20px;
+        align-items: start;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 220px;
+            background-color: $grey_bg;
+        }
+        &-title {
+            margin-top: 38px;
+        }
+        &-subtitle {
+            margin-top: 20px;
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 991px) {
+    .how {
+        &__wrapper {
+            grid-template-columns: repeat(3 , 227px);
+            column-gap: 23px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .how {
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+    }
+}
+// === Media ===

@@ -1,0 +1,12 @@
+.subtitle {
+    font-family: 'Vollkorn';
+    text-align: center;
+    &--fz15 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &--fz14 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

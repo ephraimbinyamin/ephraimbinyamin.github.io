@@ -1,0 +1,107 @@
+// === Main ===
+.software {
+    padding: 95px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__content {
+        width: 445px;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__subtitle {
+        margin-top: 50px;
+    }
+    &__link {
+        display: inline-block;
+        color: $red;
+        text-decoration: none;
+        margin-top: 20px;
+        &:hover {
+            color: $red;
+            text-decoration: underline;
+        }
+    }
+    &__video {
+        position: relative;
+        width: 445px;
+        height: 311px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -5;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-play {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 66px;
+            height: 66px;
+            background-color: $red;
+            border-radius: 100%;
+            span {
+                display: block;
+                width: 0;
+                border: 1px solid transparent;
+                border-width: 8px 0 8px 11px;
+                border-left-color: $white;
+                margin-left: 4px;
+            }
+            &:hover {
+                background-color: darken($red , 5%);
+            }
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 991px) {
+    .software {
+        &__wrapper {
+            max-width: 445px;
+            flex-direction: column;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__video {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .software {
+        padding: 50px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__video {
+            width: 280px;
+            height: 187px;
+            &-play {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+// === / Media ===

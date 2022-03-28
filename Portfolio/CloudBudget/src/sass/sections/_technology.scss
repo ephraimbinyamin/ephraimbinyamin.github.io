@@ -1,0 +1,77 @@
+// === Main ===
+.technology {
+    padding-top: 63px;
+    padding-bottom: 104px;
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 65px auto 0;
+    }
+    &__item {
+        position: relative;
+        width: 255px;
+        text-align: center;
+        &-number {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: -5;
+            transform: translateX(-50%);
+            color: rgba(16, 16, 16, 0.08);
+            font-weight: bold;
+            font-size: 100px;
+            line-height: 120px;
+            text-align: center;
+        }
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 60px auto 0;
+        }
+        &-subtitle {
+            width: 190px;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 10px auto 0;
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 1199px) {
+    .technology {
+        &__wrapper {
+            width: 536px;
+        }
+        &__item {
+            &:nth-child(n+3) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .technology {
+        padding: 50px 0;
+        &__wrapper {
+            width: 280px;
+            margin-top: 30px;
+        }
+        &__item {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+// === / Media ===

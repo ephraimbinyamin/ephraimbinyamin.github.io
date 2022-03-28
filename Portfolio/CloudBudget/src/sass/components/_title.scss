@@ -1,0 +1,26 @@
+// === Main ===
+.title {
+    margin: 0;
+    &--fz36 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    &--fz18 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 575px) {
+    .title {
+        &--fz36 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
+// === / Media ===

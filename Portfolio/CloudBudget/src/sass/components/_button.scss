@@ -1,0 +1,11 @@
+// === Button ===
+.btn {
+    display: block;
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+// === / Button ===

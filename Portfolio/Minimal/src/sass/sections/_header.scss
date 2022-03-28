@@ -1,0 +1,37 @@
+// === Main ===
+.header {
+    color: $white;
+    background: url('../img/bg/header_bg.svg') no-repeat center/cover;
+    padding-top: 105px;
+    padding-bottom: 101px;
+    &__wrapper {
+        margin: 0 auto;
+    }
+    &__hr {
+        background-color: $white;
+        margin-bottom: 25px;
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 767px) {
+    .header {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__title {
+            font-size: 28px;
+            line-height: 40px;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+// === / Media ===

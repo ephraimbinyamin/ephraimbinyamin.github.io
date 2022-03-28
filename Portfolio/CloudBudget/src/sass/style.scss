@@ -1,0 +1,81 @@
+// === Base ===
+@import "base/variables";
+@import "base/mixins";
+// === / Base ===
+
+// === Libs ===
+// @import "libs/bootstrap-reboot.min";
+@import "libs/bootstrap.min";
+@import "libs/fonts";
+// === / Libs ===
+
+// === Components ===
+@import "components/logo";
+@import "components/button";
+@import "components/title";
+@import "components/subtitle";
+@import "components/navbar";
+// === / Components ===
+
+// === Sections ===
+@import "sections/header";
+@import "sections/software";
+@import "sections/features";
+@import "sections/technology";
+@import "sections/focused";
+@import "sections/contact";
+@import "sections/footer";
+// === / Sections ===
+
+// === Common ===
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+    color: $black;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section-outer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// === Delete arrows of input ===
+
+// For Chrome
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// For Firefox
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+// For other browsers
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// === / Delete arrows of input ===
+
+// === / Common ===

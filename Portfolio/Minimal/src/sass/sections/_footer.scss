@@ -1,0 +1,104 @@
+// === Main ===
+.footer {
+    background-color: $black;
+    padding: 70px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        color: $white;
+    }
+    &__hr {
+        background-color: $white;
+    }
+    &__form {
+        width: 564px;
+        input , textarea{
+            width: 100%;
+            height: 57px;
+            color: $white;
+            font-family: 'Vollkorn';
+            font-size: 17px;
+            line-height: 22px;
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 5px;
+            outline: none;
+            padding: 18px 30px;
+            resize: none;
+            &::placeholder{
+                color: $white;
+                font-family: 'Vollkorn';
+                font-style: italic;
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+        textarea {
+            height: 127px;
+        }
+        &-email {
+            margin-top: 10px;
+        }
+        &-budget {
+            margin-top: 10px;
+        }
+        &-project {
+            margin-top: 10px;
+        }
+        &-btn {
+            display: block;
+            width: 210px;
+            color: $lightgreen;
+            font-family: 'Vollkorn';
+            font-style: italic;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            border-color: $lightgreen;
+            margin: 20px auto 0;
+            &:hover {
+                color: $black;
+                background-color: $lightgreen;
+            }
+        }
+    }
+    &__logo {
+        width: auto;
+        height: auto;
+        margin-top: 40px;
+    }
+    &__copyright {
+        color: rgba(255, 255, 255, 0.4);
+        font-family: 'Vollkorn';
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 35px;
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 767px) {
+    .footer {
+        &__form {
+            width: 524px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        &__form {
+            width: 100%;
+            input , textarea {
+                padding: 18px 20px;
+            }
+        }
+    }
+}
+// === / Media ===

@@ -1,0 +1,17 @@
+// === Logo ===
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 155px;
+    height: 70px;
+    text-decoration: none;
+    div {
+        color: $semi-black;
+        font-family: 'Oswald';
+        font-size: 22px;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+}
+// === / Logo ===

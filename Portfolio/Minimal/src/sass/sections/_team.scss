@@ -1,0 +1,63 @@
+// === Main ===
+.team {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template: minmax(330px , auto) / repeat(auto-fit , 220px);
+        gap: 50px 20px;
+        align-items: start;
+    }
+    &__item {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title {
+            margin-top: 20px;
+        }
+        &-subtitle {
+            margin-top: 6px;
+        }
+        &-social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            a {
+                display: flex;
+                justify-content: center;
+                width: 29px;
+                height: 14px;
+                background-color: $grey_bg;
+                &:not(:last-child) {
+                    margin-right: 6px;
+                }
+                &:hover {
+                    background-color: darken($grey_bg , 10%);
+                }
+            }
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 991px) {
+    .team {
+        &__wrapper {
+            grid-template-columns: repeat(2 , 220px);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .team {
+        &__wrapper {
+            grid-template-columns: 220px;
+        }
+    }
+}
+// === Media ===

@@ -1,0 +1,96 @@
+// === Main ===
+.touch {
+    position: relative;
+    z-index: 5;
+    background: url('../../img/bg/touch_bg.svg') no-repeat center/cover;
+    padding: 70px 0 100px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #7EC4BD;
+        opacity: 0.9;
+    }
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template: minmax(232px , auto) / repeat(3 , minmax(225px , 300px));
+        gap: 50px 20px;
+        align-items: start;
+        margin: 0 auto;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 65px;
+            margin-top: 13px;
+        }
+        &-title {
+            margin-top: 26px;
+        }
+        &-text {
+            display: inline-block;
+            font-family: 'Vollkorn';
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &-email {
+            color: $semi-black;
+            text-decoration: none;
+            &:hover {
+                color: lighten($semi-black , 15%);
+            }
+        }
+        &-social {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            a {
+                color: $semi-black;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                &:not(:first-child) {
+                    margin-top: 11px;
+                }
+                &:hover {
+                    color: lighten($semi-black , 15%);
+                    path {
+                        fill: lighten($semi-black , 15%);
+                    }
+                }
+                svg {
+                    margin-right: 9px;
+                }
+                div {
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 767px) {
+    .touch {
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+    }
+}
+// === Media ===
